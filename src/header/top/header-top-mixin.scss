@@ -1,0 +1,46 @@
+@mixin headerItem($y, $x, $fs, $lh) {
+  display: block;
+  padding: 9px 12px;
+  font: $fs Montserrat, sans-serif;
+  font-weight: 400;
+  line-height: $lh;
+  color: #212f3d;
+  text-decoration: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: color .2s ease 0s;
+}
+
+@mixin headerItemHover($iconSize) {
+  &:hover {
+    background-color: #fff;
+    color: #228bd6;
+
+    i {
+      color: #228bd6;
+    }
+  }
+
+  i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    font-size: $iconSize;
+    line-height: 22px;
+    color: #8d959d;
+
+  }
+}
+
+@mixin headerDropdownItem($display) {
+  display: $display;
+  list-style: none;
+  vertical-align: middle;
+  position: relative;
+}
+
+@mixin flexMargin($y, $x, $jusCon) {
+  display: flex;
+  justify-content: $jusCon;
+  margin: $y $x;
+}

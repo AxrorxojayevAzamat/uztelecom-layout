@@ -1,0 +1,27 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  .header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 15px;
+    font-size: 0;
+    line-height: 0;
+    position: relative;
+    .left {
+      max-width: 270px;
+      a {
+        display: block;
+        text-decoration: none;
+        img {
+          display: inline-block;
+          max-width: 210px;
+          height: 31px;
+        }
+      }
+    }
+
+  }
+}

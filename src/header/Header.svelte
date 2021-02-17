@@ -1,11 +1,11 @@
 <header class="header">
-    <HeaderTop></HeaderTop>
-    <HeaderBottom></HeaderBottom>
+    <HeaderTop/>
+    <HeaderBottom/>
 </header>
 
 <script>
-    import HeaderTop from "./HeaderTop.svelte";
-    import HeaderBottom from "./HeaderBottom.svelte";
+    import HeaderTop from "./top/HeaderTop.svelte";
+    import HeaderBottom from "./bottom/HeaderBottom.svelte";
 </script>
 
 <style type="text/scss">
@@ -23,10 +23,6 @@
     }
   }
 
-  @media only screen and (max-width: 992px) {
-    .header-top {
-      display: none;
-    }
-  }
+
 
 </style>
