@@ -1,21 +1,15 @@
-<a href="" on:mouseover={() => {visible = true}} on:mouseleave={() => {visible=false}} class="header-item">
+<a href=""class="header-item">
     <i class="fas fa-{icon}"></i>
     {name}
 </a>
-{#if visible}
-    <ul class="header-top-dropdown" on:mouseover={() => {visible = true}} on:mouseleave={() => {visible=false}}
-        transition:fly={{y: 10, delay: 100}}>
-        {#each data as d}
-            <li><a href="">{d}</a></li>
-        {/each}
-    </ul>
-{/if}
+<ul class="header-top-dropdown">
+    {#each data as d}
+        <li><a href="">{d}</a></li>
+    {/each}
+</ul>
 
 <script>
-    import {fly} from 'svelte/transition';
-
-    export let data = []
-    export let visible = false, icon = '', name = ''
+    export let data = [], icon = '', name = ''
 </script>
 
 <style type="text/scss">
@@ -23,10 +17,12 @@
 
   a {
     @include headerItem(9px, 12px, 12px, 24px);
-    @include headerItemHover(24px);
+    //@include headerItemHover(24px);
   }
 
   ul.header-top-dropdown {
+    display: none;
+    opacity: 0;
     min-width: 100%;
     position: absolute;
     top: 40px;

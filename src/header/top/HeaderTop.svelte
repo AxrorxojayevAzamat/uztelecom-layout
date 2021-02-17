@@ -15,11 +15,11 @@
         </div>
         <div class="right">
             <ul class="region">
-                <li>
+                <li class="dropdown">
                     <HeaderDropdown {...ddData.lang}/>
                 </li>
             </ul>
-            <div class="cabinet">
+            <div class="cabinet dropdown">
                 <HeaderDropdown {...ddData.cabinet}/>
             </div>
         </div>

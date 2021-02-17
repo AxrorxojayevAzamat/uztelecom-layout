@@ -1,10 +1,10 @@
 @mixin headerItem($y, $x, $fs, $lh) {
   display: block;
-  padding: 9px 12px;
+  padding: $y $x;
   font: $fs Montserrat, sans-serif;
   font-weight: 400;
   line-height: $lh;
-  color: #212f3d;
+  color: rgba(33,47,61,.6);
   text-decoration: none;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -43,4 +43,17 @@
   display: flex;
   justify-content: $jusCon;
   margin: $y $x;
+}
+
+@mixin dropdownHover($a: null) {
+  .dropdown:hover {
+    a {
+      background-color: #fff;
+      color: #228bd6;
+    }
+    ul {
+      display: block;
+      opacity: 1;
+    }
+  }
 }
