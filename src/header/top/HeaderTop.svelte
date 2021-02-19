@@ -1,40 +1,34 @@
 <div class="header-top">
     <div class="wrap">
-        <div class="left">
-            <ul>
-                {#each tabItems as item}
-                    <li class=""><a href="">{item}</a></li>
-                {/each}
-            </ul>
-        </div>
-        <div class="middle">
-            <a href="" class="specialFeatureBtn">
-                <i class="fas fa-glasses"></i>
-                maxsus imkoniyatlar
-            </a>
-        </div>
-        <div class="right">
-            <ul class="region">
-                <li class="dropdown">
-                    <HeaderDropdown {...ddData.lang}/>
-                </li>
-            </ul>
-            <div class="cabinet dropdown">
-                <HeaderDropdown {...ddData.cabinet}/>
-            </div>
-        </div>
+        <HeaderLeft/>
+        <HeaderMiddle/>
+        <HeaderRight/>
     </div>
 </div>
 
 <script>
-    import HeaderDropdown from "./HeaderDropdown.svelte";
-
-    let tabItems = ['Jismoniy shaxslarga', 'Biznesga', 'Operatorlarga', 'Agentlarga']
-    let ddData = {
-        lang: {name: 'O\'zbek', icon: 'globe-americas', data: ['Русский', 'O\'zbek', 'English']},
-        cabinet: {name: 'Shaxsiy kabinet', icon: 'user-alt', data: ['Shaxsiy kabinet', 'Virtual ofis']}
-    }
+    import HeaderLeft from "./HeaderLeft.svelte";
+    import HeaderMiddle from "./HeaderMiddle.svelte";
+    import HeaderRight from "./HeaderRight.svelte";
 </script>
 
-<style type="text/scss" src="./header-top.scss">
+<style type="text/scss">
+  @import "header-top-mixin";
+
+  .header-top {
+    background-color: #f1f8ff;
+    padding: 5px 0 0;
+
+    .wrap {
+      @include flexMargin(0, auto, space-between);
+      max-width: 1440px;
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .header-top {
+      display: none;
+    }
+  }
 </style>

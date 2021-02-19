@@ -6,21 +6,13 @@
             </a>
         </div>
         <div class="right">
-            <nav>
-                <ul>
-                    {#each navItems as item}
-                        <li class="dropdown">
-                            <a href="">{item.name}</a>
-                        </li>
-                    {/each}
-                </ul>
-            </nav>
+            <HeaderNav/>
         </div>
     </div>
 </div>
 
 <script>
-    import {navItems} from "./navItem";
+    import HeaderNav from "./HeaderNav.svelte";
 </script>
 
 <style type="text/scss" src="./header-bottom.scss">

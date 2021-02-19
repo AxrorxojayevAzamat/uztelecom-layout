@@ -8,8 +8,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 6px 15px;
-    font-size: 0;
-    line-height: 0;
+    //line-height: 0;
     position: relative;
 
     .left {
@@ -31,31 +30,6 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      nav {
-        padding-right: 40px;
-        ul {
-          font-size: 0;
-          line-height: 0;
-          margin: 0 -30px;
-          li {
-            list-style: none;
-            display: inline-block;
-            vertical-align: middle;
-            position: relative;
-            a {
-              display: block;
-              padding: 20px 30px;
-              font: 500 16px/22px Montserrat,sans-serif;
-              color: #212f3d;
-              text-decoration: none;
-              transition: color .25s ease 0s;
-              &:hover {
-                color: #228bd6;
-              }
-            }
-          }
-        }
-      }
     }
   }
 

@@ -9,20 +9,9 @@
 </script>
 
 <style type="text/scss">
-
   header {
     display: flex;
+    grid-area: header;
     flex-direction: column;
-
-    /*TOP*/
-
-
-    /*BOTTOM*/
-    .header-bottom {
-
-    }
   }
-
-
-
 </style>
