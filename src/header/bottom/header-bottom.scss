@@ -20,9 +20,12 @@
 
         img {
           display: inline-block;
-          max-width: 210px;
           height: 31px;
+          @media only screen and (max-width: 992px) {
+            max-width: 140px;
+          }
         }
+
       }
     }
 

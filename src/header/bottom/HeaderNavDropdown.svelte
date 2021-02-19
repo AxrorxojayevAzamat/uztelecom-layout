@@ -1,16 +1,16 @@
 {#each navItems as item}
     <li class="dropdown">
         <a href="">{item.name}</a>
-        <ul>
+        <ul class="first-dropdown">
             {#each item.children as child}
-                <li class="dropdown-item">
+                <li class="first-dropdown-item">
                     <a href="">{child.name}
-                        {#if child.children}<i class="far fa-angle-right"></i>{/if}
+                        {#if child.children}<i class="fa fa-angle-right"></i>{/if}
                     </a>
                     {#if child.children}
-                        <ul>
+                        <ul class="second-dropdown">
                             {#each child.children as nephew}
-                                <li>
+                                <li class="second-dropdown-item">
                                     <a href="">{nephew.name}</a>
                                 </li>
                             {/each}
@@ -30,7 +30,7 @@
 </script>
 
 <style type="text/scss">
-  li {
+  li.dropdown {
     list-style: none;
     display: inline-block;
     vertical-align: middle;
@@ -43,9 +43,23 @@
       color: #212f3d;
       text-decoration: none;
       transition: color .25s ease 0s;
+
+      @media only screen and (max-width: 1400px) {
+        padding: 20px 15px;
+        font-size: 16px;
+      }
+      @media only screen and (max-width: 1240px) {
+        padding: 15px 10px;
+        font-size: 13px;
+      }
     }
 
-    ul {
+    &:nth-last-child(-n+2) > ul {
+      left: 0;
+      right: inherit;
+    }
+
+    ul.first-dropdown {
       position: absolute;
       z-index: 9;
       border-top: 2px solid #228bd6;
@@ -57,7 +71,7 @@
       top: 60px;
       box-shadow: 0 20px 40px 0 rgba(0, 52, 85, .2);
 
-      li.dropdown-item {
+      li.first-dropdown-item {
         display: block;
         border-bottom: 1px solid #f1f8ff;
         border-radius: 6px;
@@ -78,13 +92,13 @@
             position: absolute;
             right: 5px;
             top: 0;
-            font-size: 13px;
+            font-size: 18px;
             color: #8d959d;
             padding: 12px;
           }
         }
 
-        ul {
+        ul.second-dropdown {
           padding: 10px 15px 18px;
           position: absolute;
           left: 105%;
@@ -95,6 +109,18 @@
           opacity: 0;
           visibility: hidden;
           box-shadow: 0 20px 40px 0 rgba(0, 52, 85, .2);
+
+          li.second-dropdown-item {
+            display: block;
+            border-bottom: 1px solid #f1f8ff;
+            border-radius: 6px;
+            position: relative;
+            transition: all .1s ease 0s;
+
+            &:last-child {
+              border-bottom: 0;
+            }
+          }
         }
 
         &:hover {
@@ -126,9 +152,16 @@
           position: absolute;
           top: 0;
           bottom: 0;
-          left: -15px;
           width: 15px;
 
+        }
+
+        &::before {
+          left: -15px;
+        }
+
+        &::after {
+          right: -15px;
         }
 
         &:last-child {
@@ -157,10 +190,6 @@
       }
     }
 
-    &:not(:nth-last-child(-n+2)) > ul {
-      left: 0;
-      right: inherit;
-    }
 
   }
 

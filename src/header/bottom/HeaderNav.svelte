@@ -18,4 +18,9 @@
 
     }
   }
+  @media only screen and (max-width: 992px) {
+    nav {
+      display: none;
+    }
+  }
 </style>
