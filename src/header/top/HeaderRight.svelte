@@ -22,7 +22,7 @@
   @import "header-top-mixin";
 
   .right {
-    @include flexMargin(0, -20px, space-between);
+    @include flexMargin(0, 0, space-between);
     align-items: center;
     min-width: 300px;
 

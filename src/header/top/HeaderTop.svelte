@@ -23,6 +23,7 @@
       @include flexMargin(0, auto, space-between);
       max-width: 1440px;
       width: 100%;
+      padding: 0 15px;
     }
   }
 

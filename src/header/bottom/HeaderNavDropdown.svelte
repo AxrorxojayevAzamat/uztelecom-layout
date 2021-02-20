@@ -1,5 +1,5 @@
 {#each navItems as item}
-    <li class="dropdown">
+    <li class="nav-item">
         <a href="">{item.name}</a>
         <ul class="first-dropdown">
             {#each item.children as child}
@@ -30,12 +30,16 @@
 </script>
 
 <style type="text/scss">
-  li.dropdown {
+  li.nav-item {
     list-style: none;
     display: inline-block;
     vertical-align: middle;
     position: relative;
-
+    &:nth-last-child(-n+2) {
+      ul {
+        right: 0;
+      }
+    }
     a {
       display: block;
       padding: 20px 30px;
@@ -54,10 +58,7 @@
       }
     }
 
-    &:nth-last-child(-n+2) > ul {
-      left: 0;
-      right: inherit;
-    }
+
 
     ul.first-dropdown {
       position: absolute;
@@ -88,6 +89,13 @@
           border-radius: 5px;
           position: relative;
 
+          @media only screen and (max-width: 1400px) {
+            min-width: 240px;
+          }
+          @media only screen and (max-width: 1240px) {
+            min-width: 200px;
+          }
+
           i {
             position: absolute;
             right: 5px;
@@ -109,6 +117,10 @@
           opacity: 0;
           visibility: hidden;
           box-shadow: 0 20px 40px 0 rgba(0, 52, 85, .2);
+
+          @media only screen and (max-width: 1240px) {
+            padding: 10px 15px;
+          }
 
           li.second-dropdown-item {
             display: block;
