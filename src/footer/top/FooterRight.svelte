@@ -4,13 +4,13 @@
     <ul class="contact">
         {#each contacts as contact}
             <li>
-                <i class="fas fa-phone-alt"></i>
+                <span class="fas fa-phone-alt"></span>
                 <a href="" class="phone">{contact.number}</a>
                 <span class="note">{contact.note}</span>
             </li>
         {/each}
         <li>
-            <i class="fa fa-envelope"></i>
+            <span class="fa fa-envelope"></span>
             <a href="">Murojaat yuborish</a>
         </li>
     </ul>
@@ -19,7 +19,7 @@
         {#each socials as social}
             <li>
                 <a href="{social.link}">
-                    <i class="fab fa-{social.icon}"></i>
+                    <span class="fab fa-{social.icon}"></span>
                 </a>
             </li>
         {/each}
@@ -63,7 +63,7 @@
         padding-left: 40px;
         margin-bottom: 30px;
 
-        i {
+        span.fas.fa-phone-alt {
           position: absolute;
           top: 0;
           left: 0;
@@ -108,7 +108,7 @@
         a {
           text-decoration: none;
 
-          i {
+          span {
             font-size: 20px;
             color: #8d959d;
             transition: color .2s ease 0s;
@@ -117,7 +117,7 @@
           &:hover, &:focus {
             color: #166dba;
 
-            i {
+            span {
               color: #228bd6;
             }
           }

@@ -1,6 +1,6 @@
 <div class="dropdown">
     <a href="" class="header-item">
-        <i class="fas fa-{icon}"></i>
+        <span class="fas fa-{icon}"></span>
         {name}
     </a>
     <ul class="header-top-dropdown">
@@ -44,7 +44,7 @@
     a {
       background-color: #fff;
       color: #228bd6;
-      i {
+      span {
         color: #228bd6;
       }
     }

@@ -1,6 +1,6 @@
 <div class="middle">
     <a href="" class="specialFeatureBtn">
-        <i class="fas fa-{icon}"></i>
+        <span class="fas fa-{icon}"></span>
         {middleText}
     </a>
     <div>
@@ -33,7 +33,7 @@
       a.specialFeatureBtn {
         background-color: #fff;
         color: #228bd6;
-        i {
+        span {
           color: #228bd6;
         }
       }
