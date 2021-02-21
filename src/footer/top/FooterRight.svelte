@@ -93,6 +93,13 @@
           text-decoration: none;
           transition: color .2s ease 0s;
         }
+        span.fa-envelope {
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-size: 24px;
+          color: #8d959d;
+        }
       }
     }
 

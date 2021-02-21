@@ -26,7 +26,7 @@
       top: 8px;
     }
     @media only screen and (max-width: 1240px) {
-      top: 1px;
+      top: 7px;
     }
     @media only screen and (max-width: 992px) {
       top: 6px;
@@ -84,13 +84,13 @@
       width: calc(100% - 400px);
       opacity: 1;
       visibility: visible;
-      right: 100px;
+      right: 55px;
     }
-    @media only screen and (max-width: 1170px) {
+    @media only screen and (max-width: 1240px) {
       width: calc(100% - 300px);
       opacity: 1;
       visibility: visible;
-      right: 50px;
+      right: 45px;
     }
     @media only screen and (max-width: 992px) {
       width: calc(100% - 100px);

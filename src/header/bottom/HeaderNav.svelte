@@ -22,7 +22,7 @@
 
 <style type="text/scss">
   nav {
-    padding-right: 40px;
+    padding-right: 55px;
 
     ul {
       //line-height: 0;
@@ -42,7 +42,7 @@
     right: 0;
     @media only screen and (max-width: 1500px) {
       padding-left: 0;
-      right: 70px;
+      right: 25px;
     }
     @media only screen and (max-width: 1240px) {
       padding-left: 0;
