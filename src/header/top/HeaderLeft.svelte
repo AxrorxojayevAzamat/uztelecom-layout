@@ -1,13 +1,15 @@
 <div class="left">
     <ul>
-        {#each tabItems as item}
-            <li class=""><a href="">{item}</a></li>
+        {#each tabItems as item, i}
+            <li class:active='{ n === i }'>
+                <a href="#" on:click={() => { n = i }}>{item}</a>
+            </li>
         {/each}
     </ul>
 </div>
 
 <script>
-    let tabItems = ['Jismoniy shaxslarga', 'Biznesga', 'Operatorlarga', 'Agentlarga']
+    let tabItems = ['Jismoniy shaxslarga', 'Biznesga', 'Operatorlarga', 'Agentlarga'], n = 0
 </script>
 
 <style type="text/scss">
@@ -15,11 +17,10 @@
 
   .left {
     ul {
-      .active {
+      li.active {
         a {
           background-color: #fff;
           color: rgba(33, 47, 61, .6);
-
         }
       }
 
@@ -28,7 +29,7 @@
         vertical-align: top;
 
         a {
-          @include headerItem(15px, 20px, 12px, 12px);
+          @include headerItem(18px, 20px, 12px, 12px);
 
           &:hover {
             color: #212f3d;

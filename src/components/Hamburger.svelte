@@ -1,8 +1,13 @@
 <script>
-    export let open = false
+    import {open} from "./mobile-menu";
+
+    let show
+    open.subscribe(value => {
+        show = value
+    })
 </script>
 
-<button class="hamburger-btn" class:open on:click={() => open = !open}>
+<button class="hamburger-btn" class:open='{show}' on:click={() => { open.update( o => !o)}}>
     <svg width=28 height=21>
         <line id="top" x1=0 y1=5 x2=32 y2=5/>
             <line id="middle" x1=0 y1=12 x2=32 y2=12/>

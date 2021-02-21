@@ -1,18 +1,21 @@
 *, :after, :before {
     box-sizing: border-box;
 }
+
 html {
     -webkit-font-smoothing: antialiased;
 }
+
 body {
-  margin: 0;
-  height: 100%;
-  background-color: #fff;
-  /*font: 400 14px/22px Montserrat,sans-serif;*/
-  color: #212f3d;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+    margin: 0;
+    height: 100%;
+    background-color: #fff;
+    /*font: 400 14px/22px Montserrat,sans-serif;*/
+    color: #212f3d;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
+
 h1, h2, h3, h4, h5, h6, ol, p, ul {
     margin: 0;
     padding: 0;
@@ -24,4 +27,12 @@ h1, h2, h3, h4, h5, h6, ol, p, ul {
             'header'
             'main'
             'footer';
+}
+
+@media screen and (max-width: 992px) {
+    .wrapper {
+        grid-template-areas:
+            'main'
+            'footer';
+    }
 }

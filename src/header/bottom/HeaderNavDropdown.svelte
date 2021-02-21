@@ -1,11 +1,11 @@
 {#each navItems as item}
-    <li class="nav-item">
+    <li class="menu-item">
         <a href="">{item.name}</a>
         <ul class="first-dropdown">
             {#each item.children as child}
                 <li class="first-dropdown-item">
                     <a href="">{child.name}
-                        {#if child.children}<i class="fa fa-angle-right"></i>{/if}
+                        {#if child.children}<span class="fa fa-angle-right"></span>{/if}
                     </a>
                     {#if child.children}
                         <ul class="second-dropdown">
@@ -96,7 +96,7 @@
             min-width: 200px;
           }
 
-          i {
+          span {
             position: absolute;
             right: 5px;
             top: 0;
