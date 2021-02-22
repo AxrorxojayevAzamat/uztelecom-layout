@@ -1,5 +1,5 @@
 {#each navItems as item}
-    <li class="menu-item">
+    <li class="nav-item">
         <a href="">{item.name}</a>
         <ul class="first-dropdown">
             {#each item.children as child}

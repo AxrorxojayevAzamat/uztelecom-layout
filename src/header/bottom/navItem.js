@@ -1,9 +1,11 @@
 export let navItems = [
     {
         name: 'Mobil aloqa',
+        open: false,
         children: [
             {
                 name: 'GSM',
+                open: false,
                 children: [
                     {name: 'Tariflar'},
                     {name: 'Xizmatlar'},
@@ -14,6 +16,7 @@ export let navItems = [
             },
             {
                 name: 'CMDA',
+                open: false,
                 children: [
                     {name: 'Tariflar'},
                     {name: 'Xizmatlar'},
@@ -26,10 +29,12 @@ export let navItems = [
     },
     {
         name: 'Internet',
+        open: false,
         children: [
             {name: 'Tariflar'},
             {
                 name: 'Xizmatlar',
+                open: false,
                 children: [
                     {name: 'Milliy tarmoq'},
                     {name: 'Qoshimcha xizmatlar'},
@@ -40,6 +45,7 @@ export let navItems = [
     },
     {
         name: 'Uy telefoni',
+        open: false,
         children: [
             {name: 'Tariflar'},
             {name: 'Xalqaro xizmatlar'},
@@ -48,6 +54,7 @@ export let navItems = [
     },
     {
         name: 'IPTV',
+        open: false,
         children: [
             {name: 'Tariflar'},
             {name: 'Kanallar'},
@@ -56,6 +63,7 @@ export let navItems = [
     },
     {
         name: 'Bulutli xizmatlar',
+        open: false,
         children: [
             {name: 'Virtual server'},
             {name: 'Colocation'}
@@ -63,6 +71,7 @@ export let navItems = [
     },
     {
         name: 'Boshqa xizmatlar',
+        open: false,
         children: [
             {name: 'Call-markaz xizmatlari'},
         ]
