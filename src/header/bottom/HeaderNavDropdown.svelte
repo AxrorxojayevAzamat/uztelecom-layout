@@ -30,7 +30,7 @@
 </script>
 
 <style type="text/scss">
-  li.nav-item {
+  li.menu-item {
     list-style: none;
     display: inline-block;
     vertical-align: middle;
