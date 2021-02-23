@@ -15,7 +15,8 @@
     let second_menu = [
         {
             name: 'Kompaniya haqiada',
-            chidren: [
+            open: false,
+            children: [
                 {name: 'Huquqiy axborot'}
             ]
         },
