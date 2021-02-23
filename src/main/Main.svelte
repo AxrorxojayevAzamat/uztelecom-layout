@@ -16,14 +16,14 @@
   ];
   
 
-  
-
+ 
   
 
 
 </script>
 
 <style>
+  
 
  main {
      background-image: url("https://uztelecom.uz/images/section2-pattern-1.png");
@@ -96,3 +96,4 @@ div a h3
 
 
 </main>
+

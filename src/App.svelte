@@ -2,6 +2,7 @@
 <div class="wrapper">
 	<Header></Header>
 	<Main></Main>
+	<Map></Map>
 	<Footer></Footer>
 </div>
 
@@ -10,6 +11,5 @@
 	import Main from "./main/Main.svelte";
 	import Footer from "./footer/Footer.svelte";
 	import MobileMenu from "./components/mmenu/MobileMenu.svelte";
+	import Map from "./main/Map.svelte";
 </script>
-
-<style type="text/scss"></style>

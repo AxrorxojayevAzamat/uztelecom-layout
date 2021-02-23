@@ -17,6 +17,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "@anoram/leaflet-svelte": "0.0.7-1",
     "node-sass": "^5.0.0",
     "sirv-cli": "^1.0.0",
     "svelte-preprocess": "^4.6.9"
