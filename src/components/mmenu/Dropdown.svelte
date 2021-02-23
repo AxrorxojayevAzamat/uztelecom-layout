@@ -2,7 +2,9 @@
     <!--FIRST-->
     <li class="menu-item">
         <a href="#">{item.name}</a>
+
         {#if item.children}
+
             {#if item.open}
                 <ul class="dropdown-1" transition:slide={{duration: 700}}>
                     {#each item.children as child, j}
@@ -20,14 +22,13 @@
                                         {/each}
                                     </ul>
                                 {/if}
-                                <span class="fa fa-angle-down"
-                                      on:click={() => {menu_items[i].children[j].open = !menu_items[i].children[j].open}}></span>
+                                <span class="fa fa-angle-down" on:click={e => { dropdown(menu_items[i].children, j)}}></span>
                             {/if}
                         </li>
                     {/each}
                 </ul>
             {/if}
-            <span class="fa fa-angle-down" on:click={() => {menu_items[i].open = !menu_items[i].open}}></span>
+            <span class="fa fa-angle-down" on:click={e => {dropdown(menu_items, i)}}></span>
         {/if}
     </li>
 {/each}
@@ -37,9 +38,15 @@
 
     export let menu_items = []
 
+    function dropdown(items, index) {
+        items.forEach((it, i)=> { it.open = (i === index) ? !it.open : false })
+        menu_items = menu_items
+    }
+
 </script>
 
 <style type="text/scss">
+
   li.menu-item {
     position: relative;
     display: block;
@@ -52,6 +59,12 @@
       color: #212f3d;
       text-decoration: none;
       transition: color .25s ease 0s;
+      &:hover {
+
+      }
+      &.active {
+
+      }
     }
 
     ul, .dropdown-1 {
@@ -107,6 +120,9 @@
         &.active {
           a.link-1 {
             background-color: #228bd6;
+            color: #fff;
+          }
+          span::before {
             color: #fff;
           }
         }
