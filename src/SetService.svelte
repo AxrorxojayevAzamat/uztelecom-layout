@@ -1,7 +1,9 @@
 <section class="set-service">
-    <div class="img">
-        <img src={bgImage} alt="">
-    </div>
+   
+  <div class="img">
+     <img src={bgImage} alt="">
+  </div>
+
     <div class="container">
         <div class="wrap">
             <div class="col-left">
@@ -11,7 +13,7 @@
                             <div class="item">
                                 <div class="item__wraps">
                                     <a href="">
-                                        <span class="far fa-{item.icon}"></span>
+                                        <span class="fas fa-{item.icon}"></span>
                                         <span class="title">{item.name}</span>
                                     </a>
                                 </div>
@@ -20,9 +22,23 @@
                     </div>
                 </div>
             </div>
+<div class="col-right">
+        <div class="wraps">
+        <iframe width="450px" height="407px" style="width:100%;" src="https://oplata.kapitalbank.uz/uz/uztelecom" frameborder="0"></iframe>
         </div>
+        </div>
+    
+
+          
     </div>
+
+      </div>
+    
+
+    
 </section>
+
+
 
 <script>
     let bgImage = 'https://uztelecom.uz/images/1380x210_UZ.png';
@@ -31,61 +47,71 @@
         [
             {
                 name: 'GSM tariflar',
-                icon: 'comment-dots'
+                icon: 'circle'
             },
             {
                 name: 'CDMA tariflar',
-                icon: 'comment'
+                icon: 'circle'
             },
             {
                 name: 'Internet tariflar',
-                icon: 'comment-alt'
+                icon: 'layer-group'
             },
             {
                 name: 'GSM qoplangan hudud',
-                icon: 'comments'
+                icon: 'signal'
             },
             {
                 name: 'Saytni TAS-IX tarmog`i uchun tekshirish',
-                icon: 'frown'
+                icon: 'wifi'
             },
             {
                 name: 'Tezlikni tekshirish',
-                icon: 'meh'
+                icon: 'tachometer-alt'
             },
             {
                 name: 'Ofislarimiz',
-                icon: 'smile'
+                icon: 'street-view'
             },
             {
                 name: 'Telefon apparatlari va qurilmalar',
-                icon: 'map'
+                icon: 'mobile-alt'
             },
         ];
 </script>
 
 <style type="text/scss">
+
   .set-service {
     padding: 60px 0 30px;
     background-color: #f1f8ff;
     position: relative;
     overflow: hidden;
+    
+
+
     .container {
       position: relative;
       z-index: 1;
-      max-width: 1440px;
+      max-width: 1400px;
       margin: 0 auto;
       width: 100%;
+      
+
       .wrap {
         font-size: 0;
         line-height: 0;
         margin: 0 -15px;
         padding: 0 15px;
-
+        display: flex;
+        .col-right
+        {
+          width: 33.333334%;
+        }
         .col-left {
           display: inline-block;
           vertical-align: top;
-          width: 66.66666667%;
+          width: 66.6666666%;
 
           .wraps {
             padding: 0 15px;
@@ -148,7 +174,14 @@
         }
       }
 
+
+     
     }
+    .img{
+       padding-left: 69px;
+       padding-right: 150px;
+       margin-bottom: 25px;
+     }
 
   }
 </style>
