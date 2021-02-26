@@ -121,17 +121,64 @@
               line-height: 0;
               margin: 0 -15px;
 
+              @media only screen and (max-width: 480px)
+              {
+                margin: 0 -5px;
+                width: 100%;
+                padding: 10px;
+                column-count: 2;
+                padding-left: 20px;
+                padding-right: 20px;
+              }
+              @media only screen and (max-width: 700px)
+              {
+                margin: 0 -5px;
+                width: 100%;
+                padding: 10px;
+                column-count: 2;
+                padding-left: 80px;
+                padding-right: 80px;
+              } 
+          
+
+
               .item {
                 list-style: none;
                 width: 25%;
                 display: inline-block;
                 vertical-align: top;
                 margin-bottom: 30px;
-
+                @media only screen and (max-width: 480px)
+              {
+                margin: 0 -5px;
+                width: 100%;
+                padding: 10px;
+              }   
+                @media only screen and (max-width: 700px)
+              {
+                margin: 0 -5px;
+                width: 100%;
+                padding: 10px;
+                
+                
+             
+              }
+             
                 .item__wraps {
                   padding: 0 15px;
                   text-align: center;
+                
+                
+                  @media only screen and (max-width: 480px)
+                 {
+                margin: 0 -5px;
+                width: 100%;
+                padding: 10px;
+                 }
+               
+           
 
+           
                   a {
                     display: block;
                     font: 500 16px/16px Montserrat, sans-serif;
@@ -143,14 +190,34 @@
                     padding: 30px 5px 20px;
                     transition: all .35s ease 0s;
 
+
+                    @media only screen and (max-width: 480px)
+              {
+                margin: 0 -5px;
+                width: 101%;
+                padding: 10px; 
+                
+              }      
+
+
+
+                 @media only screen and (max-width: 700px)
+              {
+                margin: 0 -5px;
+                width: 100%;
+                padding: 10px;
+              
+              }  
+             
+
                     span {
                       font-size: 72px;
                       color: #8d959d;
                       display: block;
                       margin-bottom: 34px;
                       transition: color .25s ease 0s;
-
-                      &.title {
+                     
+                       &.title {
                         display: inline-block;
                         min-height: 32px;
                         font: 500 16px/16px Montserrat, sans-serif;
@@ -184,4 +251,19 @@
      }
 
   }
+//   @media only screen and (max-width: 480px)
+//   {
+//     .set-service .container .wrap .col-left .wraps .list{
+//     margin: 0 -5px;
+// }
+//   }
+
+
+@media screen and (max-width: 700px) {
+    .col-right {
+      display: none;
+
+  }
+}
+ 
 </style>
