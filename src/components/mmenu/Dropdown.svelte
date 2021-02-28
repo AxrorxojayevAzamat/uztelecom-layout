@@ -22,13 +22,13 @@
                                         {/each}
                                     </ul>
                                 {/if}
-                                <span class="fa fa-angle-down" on:click={e => { dropdown(menu_items[i].children, j)}}></span>
+                                <span class="fa fa-angle-{ child.open ? 'up' : 'down'}" on:click={e => { dropdown(menu_items[i].children, j)}}></span>
                             {/if}
                         </li>
                     {/each}
                 </ul>
             {/if}
-            <span class="fa fa-angle-down" on:click={e => {dropdown(menu_items, i)}}></span>
+            <span class="fa fa-angle-{ item.open ? 'up' : 'down'}" on:click={e => {dropdown(menu_items, i)}}></span>
         {/if}
     </li>
 {/each}
