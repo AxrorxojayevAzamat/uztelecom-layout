@@ -1,4 +1,6 @@
 <MobileMenu/>
+<input type="checkbox" id="mobilemenu" name="mobilemenu">
+
 <div class="wrapper">
     <Header/>
     <Main>
