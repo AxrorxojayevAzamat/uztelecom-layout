@@ -100,47 +100,63 @@
 
       .wrap {
         font-size: 0;
-        line-height: 0;
-        margin: 0 -15px;
-        padding: 0 15px;
-        display: flex;
+    line-height: 0;
+    margin: 0 -15px;
+    
+        @media only screen and (max-width: 1170px)
+        {
+          padding: 0 15px;
+
+        }
+        @media only screen and (max-width: 1500px)
+        {
+         
+        }   
+
         .col-right
         {
           width: 33.333334%;
+          @media only screen and (max-width: 992px)
+                 {
+                      width: 100%;
+                 }
         }
         .col-left {
           display: inline-block;
           vertical-align: top;
           width: 66.6666666%;
+          @media only screen and (max-width: 992px)
+          {
+            width: 100%;
+            margin-bottom: 30px;
+          }
 
           .wraps {
             padding: 0 15px;
+           
 
+
+          
+          
             .list {
               font-size: 0;
               line-height: 0;
               margin: 0 -15px;
 
+   
+              @media only screen and (max-width: 140px)
+              {
+                margin: 0 -5px;
+                
+              }   
+             
               @media only screen and (max-width: 480px)
               {
                 margin: 0 -5px;
-                width: 100%;
-                padding: 10px;
-                column-count: 2;
-                padding-left: 20px;
-                padding-right: 20px;
-              }
-              @media only screen and (max-width: 700px)
-              {
-                margin: 0 -5px;
-                width: 100%;
-                padding: 10px;
-                column-count: 2;
-                padding-left: 80px;
-                padding-right: 80px;
-              } 
-          
-
+                
+              }   
+           
+                
 
               .item {
                 list-style: none;
@@ -148,34 +164,41 @@
                 display: inline-block;
                 vertical-align: top;
                 margin-bottom: 30px;
-                @media only screen and (max-width: 480px)
-              {
-                margin: 0 -5px;
-                width: 100%;
-                padding: 10px;
-              }   
-                @media only screen and (max-width: 700px)
-              {
-                margin: 0 -5px;
-                width: 100%;
-                padding: 10px;
+                @media only screen and (max-width: 1400px)
+              {    
                 
+                margin-bottom: 20px;
                 
              
-              }
+              }  
+              
+              @media only screen and (max-width: 700px)
+              {  
+                
+                  width: 33.333333%;
+                
+             
+              }  
+             
+            
+                @media only screen and (max-width: 480px)
+              {
+                width: 50%;
+                margin-bottom: 10px;
+                
+              }   
+             
+                
+          
              
                 .item__wraps {
                   padding: 0 15px;
                   text-align: center;
-                
-                
-                  @media only screen and (max-width: 480px)
-                 {
-                margin: 0 -5px;
-                width: 100%;
-                padding: 10px;
-                 }
-               
+     
+                @media only screen and (max-width: 480px)
+              {
+                padding: 0 5px;
+              }   
            
 
            
@@ -191,32 +214,31 @@
                     transition: all .35s ease 0s;
 
 
+             
                     @media only screen and (max-width: 480px)
               {
-                margin: 0 -5px;
-                width: 101%;
-                padding: 10px; 
-                
-              }      
-
-
-
-                 @media only screen and (max-width: 700px)
-              {
-                margin: 0 -5px;
-                width: 100%;
-                padding: 10px;
-              
-              }  
-             
-
+                padding: 20px 5px;
+              }   
+           
                     span {
                       font-size: 72px;
                       color: #8d959d;
                       display: block;
                       margin-bottom: 34px;
                       transition: color .25s ease 0s;
-                     
+                      @media only screen and (max-width: 1400px)
+              {    
+                
+                font-size: 52px;
+                
+             
+              }  
+     
+                @media only screen and (max-width: 480px)
+              {
+                margin-bottom: 20px;
+              }   
+           
                        &.title {
                         display: inline-block;
                         min-height: 32px;
@@ -248,6 +270,7 @@
        padding-left: 69px;
        padding-right: 150px;
        margin-bottom: 25px;
+       overflow: hidden;
      }
 
   }
@@ -259,11 +282,6 @@
 //   }
 
 
-@media screen and (max-width: 700px) {
-    .col-right {
-      display: none;
 
-  }
-}
  
 </style>

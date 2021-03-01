@@ -1,5 +1,5 @@
 <section>
-
+    <h1>Sotuv ofislari joylashuvi</h1>
     <div class="map" >
 
         <Map {options}/>
@@ -76,7 +76,12 @@
 
 
 <style type="text/scss">
-
+h1
+{
+    font: 500 36px/48px Montserrat,sans-serif;
+    color: #212f3d;
+    text-align: center;
+}
     div {
 
         padding-top: 50px;
