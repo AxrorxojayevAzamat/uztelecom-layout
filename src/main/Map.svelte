@@ -93,7 +93,6 @@ h1
     .map {
 
         height: 600px;
-
         width: auto;
 
     }

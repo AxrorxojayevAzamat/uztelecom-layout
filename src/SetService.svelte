@@ -22,11 +22,11 @@
                     </div>
                 </div>
             </div>
-<div class="col-right">
+<!-- <div class="col-right">
         <div class="wraps">
         <iframe width="450px" height="407px" style="width:100%;" src="https://oplata.kapitalbank.uz/uz/uztelecom" frameborder="0"></iframe>
         </div>
-        </div>
+        </div> -->
     
 
           

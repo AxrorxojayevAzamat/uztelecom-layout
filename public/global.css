@@ -1,3 +1,4 @@
+ @charset "UTF-8"; 
 *, :after, :before {
     box-sizing: border-box;
 }
@@ -36,3 +37,299 @@ h1, h2, h3, h4, h5, h6, ol, p, ul {
             'footer';
     }
 }
+
+.mainPopularTarifs  .swiper-container {
+    width: 100vw !important;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&subset=cyrillic");
+@font-face {
+  font-family: 'icomoon';
+  src: url("./fonts/icomoon.eot?xxsqey");
+  src: url("./fonts/icomoon.eot?xxsqey#iefix") format("embedded-opentype"),
+   url("./fonts/icomoon.ttf?xxsqey") format("truetype"), 
+   url("./fonts/icomoon.woff?xxsqey") format("woff"),
+    url("./fonts/icomoon.svg?xxsqey#icomoon") format("svg");
+  font-style: normal;
+  font-display: auto; }
+
+  [class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-unit:before {
+    content: "\e900";
+  }
+  .icon-chat:before {
+    content: "\e903";
+  }
+  .icon-chevrone-bottom:before {
+    content: "\e904";
+  }
+  .icon-chevrone-left:before {
+    content: "\e905";
+  }
+  .icon-chevrone-right:before {
+    content: "\e906";
+  }
+  .icon-chevrone-top:before {
+    content: "\e907";
+  }
+  .icon-close:before {
+    content: "\e908";
+  }
+  .icon-connector:before {
+    content: "\e909";
+  }
+  .icon-earth:before {
+    content: "\e90a";
+  }
+  .icon-email:before {
+    content: "\e90b";
+  }
+  .icon-et:before {
+    content: "\e90c";
+  }
+  .icon-eye:before {
+    content: "\e90d";
+  }
+  .icon-fb:before {
+    content: "\e90e";
+  }
+  .icon-fttb:before {
+    content: "\e90f";
+  }
+  .icon-Gear:before {
+    content: "\e910";
+  }
+  .icon-glasses:before {
+    content: "\e911";
+  }
+  .icon-globus:before {
+    content: "\e912";
+  }
+  .icon-gsm-icon:before {
+    content: "\e913";
+  }
+  .icon-house:before {
+    content: "\e914";
+  }
+  .icon-info:before {
+    content: "\e915";
+  }
+  .icon-layers-icon:before {
+    content: "\e916";
+  }
+  .icon-logo-uztelecom:before {
+    content: "\e917";
+  }
+  .icon-minus-fill:before {
+    content: "\e918";
+  }
+  .icon-mobile:before {
+    content: "\e919";
+  }
+  .icon-mobile-free:before {
+    content: "\e91a";
+  }
+  .icon-monitor:before {
+    content: "\e91b";
+  }
+  .icon-monitor-2:before {
+    content: "\e91c";
+  }
+  .icon-offices:before {
+    content: "\e91d";
+  }
+  .icon-ok:before {
+    content: "\e91e";
+  }
+  .icon-packet:before {
+    content: "\e91f";
+  }
+  .icon-person:before {
+    content: "\e920";
+  }
+  .icon-phone-0:before {
+    content: "\e921";
+  }
+  .icon-phone-1:before {
+    content: "\e922";
+  }
+  .icon-phone-2:before {
+    content: "\e923";
+  }
+  .icon-phone-3:before {
+    content: "\e924";
+  }
+  .icon-phone-4:before {
+    content: "\e925";
+  }
+  .icon-phone-call:before {
+    content: "\e926";
+  }
+  .icon-phone-code:before {
+    content: "\e927";
+  }
+  .icon-phones:before {
+    content: "\e928";
+  }
+  .icon-plus-fill:before {
+    content: "\e929";
+  }
+  .icon-printer:before {
+    content: "\e92a";
+  }
+  .icon-question:before {
+    content: "\e92b";
+  }
+  .icon-radar:before {
+    content: "\e92c";
+  }
+  .icon-router:before {
+    content: "\e92d";
+  }
+  .icon-rss:before {
+    content: "\e92e";
+  }
+  .icon-search:before {
+    content: "\e92f";
+  }
+  .icon-Shape-593x:before {
+    content: "\e930";
+  }
+  .icon-signal:before {
+    content: "\e931";
+  }
+  .icon-sms:before {
+    content: "\e932";
+  }
+  .icon-sms-2:before {
+    content: "\e933";
+  }
+  .icon-sms-code:before {
+    content: "\e934";
+  }
+  .icon-sort:before {
+    content: "\e935";
+  }
+  .icon-spanner:before {
+    content: "\e936";
+  }
+  .icon-tg:before {
+    content: "\e937";
+  }
+  .icon-tw:before {
+    content: "\e938";
+  }
+  .icon-unlimited:before {
+    content: "\e939";
+  }
+  .icon-user:before {
+    content: "\e93a";
+  }
+  .icon-wallet:before {
+    content: "\e93b";
+  }
+  .icon-warning:before {
+    content: "\e93c";
+  }
+  .icon-wave-line:before {
+    content: "\e93d";
+  }
+  .icon-wifi:before {
+    content: "\e93e";
+  }
+  .icon-www:before {
+    content: "\e93f";
+  }
+  .icon-www2:before {
+    content: "\e940";
+  }
+  .icon-yotube:before {
+    content: "\e941";
+  }
+  .icon-adsl:before {
+    content: "\e942";
+  }
+  .icon-archive:before {
+    content: "\e943";
+  }
+  .icon-arrow-in:before {
+    content: "\e944";
+  }
+  .icon-arrow-left:before {
+    content: "\e945";
+  }
+  .icon-arrow-out:before {
+    content: "\e946";
+  }
+  .icon-arrow-right:before {
+    content: "\e947";
+  }
+  .icon-builds:before {
+    content: "\e948";
+  }
+  .icon-cdma-icon:before {
+    content: "\e949";
+  }
+  .icon-check:before {
+    content: "\e94a";
+  }
+  .icon-speed:before {
+    content: "\e94b";
+  }
+  .icon-double-arrow:before {
+    content: "\e94c";
+  }
+  .icon-opened:before {
+    content: "\e94d";
+  }
+  .icon-closed:before {
+    content: "\e94e";
+  }
+  .icon-extended:before {
+    content: "\e94f";
+  }
+  .icon-markerPin:before {
+    content: "\e950";
+  }
+  .icon-path:before {
+    content: "\e951";
+  }
+  .icon-bus:before {
+    content: "\e952";
+  }
+  .icon-link:before {
+    content: "\e953";
+  }
+  .icon-tv-icon:before {
+    content: "\e954";
+  }
+  .icon-fttx:before {
+    content: "\e955";
+  }
+  .icon-vdsl:before {
+    content: "\e956";
+  }
+  .icon-fttxvdsl:before {
+    content: "\e957";
+  }
+  .icon-android:before {
+    content: "\e958";
+  }
+  .icon-apple:before {
+    content: "\e959";
+  }
+  .icon-instagram:before {
+    content: "\e95a";
+  }
